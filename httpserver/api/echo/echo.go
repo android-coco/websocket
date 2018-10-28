@@ -1,11 +1,11 @@
 package echo
 
 import (
-	"eospart_websocket/common"
-	"eospart_websocket/model"
-	"eospart_websocket/module"
-	"eospart_websocket/cache"
-	"eospart_websocket/utils"
+	"websocket/common"
+	"websocket/model"
+	"websocket/module"
+	"websocket/cache"
+	"websocket/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	"net/http"

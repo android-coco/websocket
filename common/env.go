@@ -1,7 +1,7 @@
 package common
 
 import (
-	"eospart_websocket/module"
+	"websocket/module"
 	"net"
 	"net/http"
 	"os"

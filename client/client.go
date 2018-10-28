@@ -1,7 +1,7 @@
 package main
 
 import (
-	"eospart_websocket/utils"
+	"websocket/utils"
 	"flag"
 	"fmt"
 	"log"

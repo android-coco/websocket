@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"eospart_websocket/common"
-	"eospart_websocket/module"
+	"websocket/common"
+	"websocket/module"
 	"github.com/go-redis/redis"
 )
 

@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"eospart_websocket/common"
-	"eospart_websocket/module"
+	"websocket/common"
+	"websocket/module"
 	"errors"
 	"github.com/bradfitz/gomemcache/memcache"
 	"strings"

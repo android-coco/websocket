@@ -1,8 +1,8 @@
 package api
 
 import (
-	"eospart_websocket/httpserver/api/echo"
-	"eospart_websocket/httpserver/api/home"
+	"websocket/httpserver/api/echo"
+	"websocket/httpserver/api/home"
 	"github.com/gin-gonic/gin"
 )
 

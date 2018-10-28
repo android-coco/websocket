@@ -1,7 +1,7 @@
 package common
 
 import (
-	"eospart_websocket/module"
+	"websocket/module"
 	"fmt"
 	"github.com/cihub/seelog"
 )

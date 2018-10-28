@@ -1,9 +1,9 @@
 package httpserver
 
 import (
-	"eospart_websocket/common"
-	"eospart_websocket/httpserver/api"
-	"eospart_websocket/module"
+	"websocket/common"
+	"websocket/httpserver/api"
+	"websocket/module"
 	"strings"
 
 	"github.com/gin-contrib/cors"

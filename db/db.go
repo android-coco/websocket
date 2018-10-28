@@ -1,8 +1,8 @@
 package db
 
 import (
-	"eospart_websocket/common"
-	"eospart_websocket/module"
+	"websocket/common"
+	"websocket/module"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
@@ -22,6 +22,7 @@ func InitDb() module.Error {
 		common.Logger.Error("init mysql1 failed.", err)
 		return err
 	}
+
 	err = initInlineActionDb()
 	if err.ErrCode != common.SUCCESS_CODE {
 		common.Logger.Error("init mysql2 failed.", err)

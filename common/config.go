@@ -5,7 +5,7 @@ import (
 	"github.com/go-ini/ini"
 	"os"
 	"path/filepath"
-	"eospart_websocket/module"
+	"websocket/module"
 )
 
 var Config *ini.File

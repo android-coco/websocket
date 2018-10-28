@@ -1,13 +1,12 @@
 package main
 
 import (
-	"eospart_websocket/cache"
-	"eospart_websocket/common"
-	"eospart_websocket/db"
-	"eospart_websocket/httpserver"
-	"eospart_websocket/module"
+	"websocket/cache"
+	"websocket/common"
+	"websocket/db"
+	"websocket/httpserver"
+	"websocket/module"
 	"fmt"
-	"google.golang.org/appengine/memcache"
 )
 
 func main() {
