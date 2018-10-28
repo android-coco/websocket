@@ -3,7 +3,7 @@ exe_path="$( cd "$( dirname "$0"  )" && pwd  )"
 WebSocket_HOME=${exe_path}/../
 WebSocket_SBIN=${WebSocket_HOME}/bin/
 WebSocket_PID=${WebSocket_HOME}/data/websocket.pid
-
+WebSocket=${WebSocket_SBIN}websocket
 start()
 {
     if [ -f ${WebSocket_PID} ]
@@ -16,9 +16,13 @@ start()
             return
         fi
     fi
-    cd ${WebSocket_SBIN}
-    nohup ./websocket &> ../logs/websocket.log 2>> ../logs/websocket_except.log &
-    echo "websocket start"
+    if [ ! -x ${WebSocket} ];then
+        echo "dep file does not exist,run the command make."
+    else
+        cd ${WebSocket_SBIN}
+        nohup ./websocket &> ../logs/websocket.log 2>> ../logs/websocket_except.log &
+        echo "websocket start"
+    fi
 }
 
 
@@ -69,7 +73,7 @@ reload()
         echo "service already exit"
         return
     fi
-    kill -USR2 `cat $${WebSocket_PID}`
+    kill -USR2 `cat ${WebSocket_PID}`
     return
 }
 
